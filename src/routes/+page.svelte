@@ -1,6 +1,6 @@
-<div class="homebg w-full min-h-svh  text-black  border-b-4 border-black" id="home">
+<div class="homebg w-full min-h-svh    border-b-4 border-black" id="home">
     <br><br>
-    <p class="lg:mt-40 md:mt-28  lg:text-4xl  md:text-3xl text-center ">Trust Worthy Solution for better future</p>
+    <p class="lg:mt-20 md:mt-28  lg:text-4xl  md:text-3xl text-center ">Trust Worthy Solution for better future</p>
     <p class="tit mt-5 lg:text-8xl md:text-7xl text-center "> Welcome to 
         {#each text.split('') as letter, index}
         <span style="color: {colors[index % colors.length]}">{letter}</span>
@@ -23,7 +23,11 @@
   
 <style>
     .homebg{
-        background-color: #b382c4;
+        background-color: #000000;
+        background-image: 
+        linear-gradient(45deg, #ffffff95 1px, transparent 1px), 
+        linear-gradient(-45deg, #ffffff95 1px, transparent 1px);
+      background-size: 20px 20px;
     }
 
     .down{
@@ -36,6 +40,10 @@
 
     .downimg{
         filter: brightness(0) invert(0);
+    }
+
+    p{
+        color: #E5D9F2;
     }
 </style>
 

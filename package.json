@@ -5,17 +5,23 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"start": "svelte-kit dev",
+		"deploy": "npx gh-pages -d build"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/adapter-static": "^3.0.4",
+		"@sveltejs/kit": "^2.5.28",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"autoprefixer": "^10.4.20",
+		"dotenv": "^16.4.5",
+		"gh-pages": "^6.1.1",
 		"postcss": "^8.4.45",
 		"prettier": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.6",
 		"svelte": "^4.2.7",
+		"svelte-kit": "^1.2.0",
 		"tailwindcss": "^3.4.11",
 		"vite": "^5.0.3"
 	},
